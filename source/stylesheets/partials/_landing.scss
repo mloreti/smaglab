@@ -9,6 +9,9 @@
 .landing-text {
   position: relative;
   top: 280px;
+  @include media-query($tablet) {
+    top: 200px;
+  }
   h1 {
     font-size: 96px;
     font-weight: 300;
