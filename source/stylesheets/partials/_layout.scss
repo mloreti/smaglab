@@ -130,20 +130,15 @@ section{
 
 .contact{
   .contact-text{
-    @include span-columns(4);
+    @include span-columns(3);
     @include media-query($tablet) {
       @include span-columns(12);
     }
   }
   .contact-map {
-    @include span-columns(8);
+    @include span-columns(9);
     @include media-query($tablet) {
       @include span-columns(12);
-    }
-    img{
-      height: 300px;
-      width: 100%;
-      background-color: $grey-color;
     }
   }
 }
