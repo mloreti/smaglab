@@ -1,0 +1,149 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  @include outer-container;
+  max-width: 960px;
+  height: 100%;
+  padding: 20px
+}
+
+.section-title {
+    display:flex;
+    margin-bottom: 50px;
+    h1 {
+      font-size: 36px;
+      color: $brand-color;
+      margin-right: 10px;
+    }
+}
+.hr {
+  border-bottom: 5px solid $brand-color;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-bottom: 36px;
+}
+
+section{
+    @include outer-container;
+    padding: 150px 0px;
+    @include media-query($tablet) {
+      padding: 50px 0px;
+    }
+}
+
+@include media-query($tablet) {
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+
+// Bike
+
+.bike {
+  background-color: $background-color;
+  p {
+    @include span-columns(4);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+  }
+  .bike-images{
+    @include span-columns(8);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+    img {
+      width: 100%;
+      height: 400px;
+      background-color: $grey-color;
+    }
+    .large {
+      @include span-columns(12);
+    }
+    .small {
+      img{
+        height: 200px
+      }
+      margin-top: 5px;
+      @include span-columns(6);
+      @include media-query($tablet) {
+        @include span-columns(12);
+      }
+    }
+  }
+}
+
+// About
+
+.about {
+  .about-text {
+    @include span-columns(4);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+  }
+  .about-image{
+    @include span-columns(8);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+    img {
+      height: 400px;
+      width: 100%;
+      background-color: $grey-color;
+    }
+  }
+}
+
+// Values
+
+.values{
+  background-color: $background-color;
+  h3 {
+    font-size: 16px;
+  }
+  .values-text {
+    @include span-columns(4);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+  }
+  .values-images {
+    @include span-columns(4);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+    img{
+      width: 100%;
+      height: 200px;
+      background-color: $grey-color;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+// Contact
+
+.contact{
+  .contact-text{
+    @include span-columns(4);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+  }
+  .contact-map {
+    @include span-columns(8);
+    @include media-query($tablet) {
+      @include span-columns(12);
+    }
+    img{
+      height: 300px;
+      width: 100%;
+      background-color: $grey-color;
+    }
+  }
+}

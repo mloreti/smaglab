@@ -1,0 +1,22 @@
+.landing {
+  height: 100%;
+  background-image: image-url("background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.landing-text {
+  position: relative;
+  top: 280px;
+  h1 {
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 8px;
+    color: white;
+    span {
+      font-weight: 700;
+    }
+  }
+}
